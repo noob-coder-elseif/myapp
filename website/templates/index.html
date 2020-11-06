@@ -1,0 +1,949 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="Bootstrap4, Multipurpose, responsive, Business, template, Fund, Charity, Poverty, Help, Non profit, Money, Poor, Aid, html5, css, epidemic, pestilence" />
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Title -->
+<title>Caring Hands - Fund For Nonprofit Charity Hope Orphen</title>
+
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/png" href="{% static 'website/assets/images/fevicon1.png' %}">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{% static 'website/assets/css/bootstrap.min.css' %}">
+
+<!-- Font awesome CSS -->
+<link rel="stylesheet" href="{% static 'website/assets/css/font-awesome.min.css' %}">
+
+<!-- Animate CSS -->
+<link rel="stylesheet" href="{% static 'website/assets/css/animate.min.css' %}">
+
+<!-- OwlCarousel CSS -->
+<link rel="stylesheet" href="{% static 'website/assets/css/owl.carousel.min.css' %}">
+
+<!-- Magnific popup CSS -->
+<link rel="stylesheet" href="{% static 'website/assets/css/fancybox.min.css' %}">
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="{% static 'website/style.css' %}">
+
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="{% static 'website/assets/css/responsive.css' %}">
+
+<!-- jQuery -->
+<script src="{% static 'website/assets/js/jquery-3.4.1.min.js' %}"></script>
+</head>
+<body>
+<div class="main-wrapper">
+
+<!-- Preloader start -->
+  <div class="site-preloader-wrapper">
+   <div class="preloader-block"> 
+     <div class="logo"> <a href="{% url 'home'  %}" title="Caring Hands">Caring Hands</a> </div>
+     <div class="bar"></div>
+   </div>  
+  </div>
+<!-- Preloader End -->
+
+  <header class="for-sticky"> 
+    <!-- Header area start -->
+    <div class="container-fluid">
+      <div class="header-block"> 
+        <!-- Site logo Start -->
+        <div class="logo"> <a href="{% url 'home'  %}" title="Caring Hands">Caring Hands</a> </div>
+        <!-- Site logo end --> 
+        
+        <!-- Main menu start -->
+        <nav class="mainmenu home-nav">
+          <ul id="navigation">
+            <li class="nav-active"><a href="#home" title="Home">Home</a></li>
+            <li><a href="#about-us" title="About Us">About Us</a></li>
+            <li><a href="#other-causes" title="Causes">Causes</a></li>
+            <li><a href="#volunteer" title="Volunteer">Volunteer</a></li>
+            <li><a href="#news" title="News &amp; Events">News &amp; Events</a></li>
+            <li><a href="#inspire" title="Who Inspire Us">Who Inspire Us</a></li>
+            <li><a href="#gallery" title="Gallery">Gallery</a></li>
+            <li><a href="#contact" title="Contact">Contact</a></li>
+            <!--<li><a href="#" title="Pages">Pages</a>
+              <ul>
+                <li><a href="{% url 'home'  %}" title="Home with color 1">Home with color 1</a></li>
+                <li><a href="{% url 'home'  %}" title="Home Slider with color 2">Home Slider with color 2</a></li>
+                <li><a href="{% url 'home'  %}" title="Home bg video with color 3">Home bg video with color 3</a></li>
+                <li><a href="{% url 'home'  %}" title="Gallery page">Gallery page</a></li>
+                <li><a href="{% url 'home'  %}" title="Cause Details with donate">Cause Details with donate</a></li>
+              </ul>
+            </li>-->
+          </ul>
+        </nav>
+        <!-- Main menu end -->
+        <div class="header-login-link">
+          <ul>
+            <li><a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="{% static 'website/assets/images/flag-1.png' %}" alt=""/> EN</a>
+              <ul class="dropdown-menu">
+                <li><a href="" title=""><img src="{% static 'website/assets/images/flag-1.png' %}" alt=""/> EN</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="header-button"><a href="{% url 'home'  %}" title="">Donate</a></div>
+        <div class="mobile-menu-wrapper home-nav"></div>
+      </div>
+    </div>
+    <!-- Header area End --> 
+  </header>
+  
+  <!-- Slider Start -->
+  <section id="home">
+    <div class="homepage-slides-wrapper">
+      <div class="single-banner black-font"> 
+        <!-- Slider item1 start-->
+        <div class="single-slide-item single-banner-bg">
+          <div class="item-table">
+            <div class="item-tablecell">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-10">
+                    <h2>Considering <br>
+                      your small contribution</h2>
+                    <h3>Make the world more Beautiful and Liveable for every person.</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slider item1 end--> 
+      </div>
+    </div>
+    <div class="featured-fund-sec">
+      <div class="container">
+        <div class="featured-fund">
+          <div class="featured-fund-left">
+            <div class="featured-fund-raise">
+              <div class="featured-fund-raise-block">
+                <div class="progress show-raised-percent">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span>80%</span></div>
+                </div>
+                <div class="raise-total"><span><b>$4000</b> raised</span> <span>of <b>$5000</b></span></div>
+                <div class="text-center mt-2"><a href="{% url 'home'  %}" title="" class="main-btn feature-main-btn">Donate Now</a></div>
+              </div>
+            </div>
+            <div class="featured-fund-end">
+              <div class="timer">
+                <div class="days"></div>
+                <div class="hours"></div>
+                <div class="minutes"></div>
+                <div class="seconds"></div>
+                <input type="hidden" class="end_time" value="1 April 2021 9:56:00 GMT+01:00" />
+              </div>
+            </div>
+          </div>
+          <div class="featured-fund-right">
+            <h3>Fund collect for foodless people of pestilence time</h3>
+            <p>We have privided food successfully to 200 foodless people from our 1st collected fund and whice people are donated.</p>
+            <p>We are collecting fund 2nd time for 500 foodless family.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Slider End -->
+  
+  <section id="about-us"> 
+    <!-- Our Mission Start -->
+    <div class="page-content-block">
+      <div class="container">
+        <div class="row"> 
+          <!-- Factory Gallery start -->
+          <div class="col-12 col-lg-4">
+            <div class="mission-picture"> <img src="{% static 'website/assets/images/mission-pic.jpg' %}" alt=""/>
+              <div class="video-block"> <a class="ico-video" href="https://www.youtube.com/watch?v=oytpJAVBkX8" data-fancybox><span></span></a> </div>
+            </div>
+          </div>
+          <!-- Factory gallery end -->
+          <div class="col-12 col-lg-7 offset-lg-1">
+            <div class="mission-text">
+              <h2 class="title-bottom-border">OUR VISION</h2>
+              <p>To have a literate, healthy, innovative ,ecstatic, enlightened,  and just society ; that would act as catalyst for the rapid growth and development of our nation into becoming the ultimate global power that it one was.</p><br>
+              <h2 class="title-bottom-border">OUR WORK</h2>
+              <p>Caring Hands act as a caring shelter for the unprivileged and  provide them with the effective basic amenities such as- Food, Clothing, Medicines & personal care kit along with a touch of caress .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Mission end --> 
+    
+    <!-- How we work Start -->
+    <div class="page-content-block how-we-work green-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8 wow fadeInRight">
+            <h2 class="title-bottom-border">How do We work?</h2>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="how-work-block"> <span>01</span>
+                  <h3>We target our causes</h3>
+                  <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Contrary to popular belief.</p>-->
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="how-work-block"> <span>02</span>
+                  <h3>Fund collection start</h3>
+                  <!--<p>when an unknown printer took a galley of type and scrambled it to make. Lorem Ipsum is simply dummy text.</p>-->
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="how-work-block"> <span>03</span>
+                  <h3>Buy food for poor family</h3>
+                  <!--<p> It was popularised in the 1960s with the release of Letraset sheets containing. when an unknown printer took.</p>-->
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="how-work-block"> <span>04</span>
+                  <h3>Delivery to family</h3>
+                  <!--<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It was popularised in the 1960s.</p>-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- How we work end --> 
+  </section>
+  <section id="other-causes"> 
+    <!-- Other Causes start -->
+    <div class="page-content-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-10 offset-lg-1">
+            <div class="section-title wow fadeInUp">
+              <h2>Upcoming Causes</h2>
+              <div class="title-border"><span><i class="fas fa-hand-holding-heart"></i></span></div>
+              <p>Explore Our ongoing and upcoming causes here.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="owl-carousel upcoming-causes">
+            <div class="causes-item wow fadeInUp">
+              <div class="causes-item-bg causes-img-1"></div>
+              <div class="causes-content">
+                <h3><a href="" title="">Fund for poor education</a></h3>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
+                </div>
+                <div class="raise-total"><span><b>$1500</b> raised</span> <span>of <b>$48000</b></span></div>
+                <p>Caring hands offers a platform to crowdfund for education, not only to poor students and teachers in need of funds, but to anyone who wants to fundraise for education in the state and the country.</p>
+                <div class="mt-4"><a href="{% url 'home'  %}" title="" class="main-btn">Donate Now</a></div>
+              </div>
+            </div>
+            <div class="causes-item wow fadeInUp">
+              <div class="causes-item-bg causes-img-2"></div>
+              <div class="causes-content">
+                <h3><a href="" title="">Help for homeless people</a></h3>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:15%"></div>
+                </div>
+                <div class="raise-total"><span><b>$500</b> raised</span> <span>of <b>$3500</b></span></div>
+                <p>We are open to homeless charities, poverty prevention schemes and housing associations. Your donation is used for prevention of homelessness, care of the homeless .</p>
+                <div class="mt-4"><a href="{% url 'home'  %}" title="" class="main-btn">Donate Now</a></div>
+              </div>
+            </div>
+            <div class="causes-item wow fadeInUp">
+              <div class="causes-item-bg causes-img-3"></div>
+              <div class="causes-content">
+                <h3><a href="" title="">Fund for helth camp</a></h3>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:50%"></div>
+                </div>
+                <div class="raise-total"><span><b>$3500</b> raised</span> <span>of <b>$7000</b></span></div>
+                <p>At the caring hands, we focus particularly on innovation in delivering rural health care and on advocacy around global health issues such as tuberculosis, primary health care, and road safety.</p>
+                <div class="mt-4"><a href="{% url 'home'  %}" title="" class="main-btn">Donate Now</a></div>
+              </div>
+            </div>
+            <div class="causes-item wow fadeInUp">
+              <div class="causes-item-bg causes-img-4"></div>
+              <div class="causes-content">
+                <h3><a href="" title="">Aid for foodless family</a></h3>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:20%"></div>
+                </div>
+                <div class="raise-total"><span><b>$1200</b> raised</span> <span>of <b>$6000</b></span></div>
+                <p>The act of feeding someone is the ultimate act of care and affection, a form of sharing yourself with someone else through food. We exert endlessly to take the dream of ending hunger a step closer to reality.</p>
+                <div class="mt-4"><a href="{% url 'home'  %}" title="" class="main-btn">Donate Now</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Other Causes End --> 
+  </section>
+  <section id="volunteer"> 
+    <!-- Become Volunteer start -->
+    <div class="page-content-block become-volunteer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 offset-lg-6 wow fadeInRight">
+            <h2 class="title-bottom-border">BECOME A VOLUNTEER</h2>
+            <h6>we always will be happy if you join with us!</h6>
+            <div class="volunteer-form">
+              <form class="steps" accept-charset="UTF-8" enctype="multipart/form-data">
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Full Name</label>
+                    <input type="text" class="form-control" placeholder="Full Name" required>
+                    <span class="error1"> <i class="error-log fa fa-exclamation-triangle"></i> This field is required </span>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12 col-sm-6">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="Email" required>
+                  </div>
+                  <div class="form-group col-12 col-sm-6">
+                    <label>Mobile</label>
+                    <input type="text" class="form-control" placeholder="Mobile">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12 col-sm-6">
+                    <label>Gender</label>
+                    <select class="custom-select" name="gender">
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-12 col-sm-6">
+                    <label>Place</label>
+                    <select class="custom-select" name="place">
+                      <option value="Otario">Otario</option>
+                      <option value="Toranto">Toranto</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Message</label>
+                    <textarea class="form-control text-area" placeholder="Message"></textarea>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label>Upload CV</label>
+                    <input type="file" name="img[]" class="inputfile">
+                    <div class="input-group"> <span class="input-file-addon"><i class="fas fa-file-upload"></i></span>
+                      <input type="text" class="form-control input-file-text" disabled placeholder="Upload Image">
+                      <span class="input-file-btn">
+                      <button class="browse btn input-file-button" type="button"><i class="fas fa-search"></i> Browse</button>
+                      </span> </div>
+                    <p>Max upload size: 10MB</p>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <button class="main-btn" type="submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Become Volunteer end --> 
+    
+    <!-- Our Volunteer start -->
+    <div class="page-content-block meet-the-volunteer">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-12 col-lg-10 offset-lg-1">
+            <div class="section-title wow fadeInUp">
+              <h2>Our Volunteer</h2>
+              <div class="title-border"><span><i class="fas fa-hand-holding-heart"></i></span></div>
+              <p>Our work would not be possible without the work of our dedicated volunteers. Some of whom are listed below.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="owl-carousel volunteer-section">
+            <div class="volunteer-item">
+              <div class="volunteer-block">
+                <div class="volunteer-image"> <img src="{% static 'website/assets/images/shashankbharti.jpg' %}" alt=""/>
+                  <div class="volunteer-figure">
+                    <div class="item-table">
+                      <div class="item-tablecell"> <a href="" title=""><i class="fab fa-facebook-f"></i></a> <a href="" title=""><i class="fab fa-twitter"></i></a> <a href="" title=""><i class="fab fa-skype"></i></a> <a href="" title=""><i class="fab fa-linkedin"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="volunteer-text">
+                  <h5>Shashank Bharti</h5>
+                  <p>Managing Director</p>
+                </div>
+              </div>
+            </div>
+            <div class="volunteer-item">
+              <div class="volunteer-block">
+                <div class="volunteer-image"> <img src="{% static 'website/assets/images/akansha.jpg' %}" alt=""/>
+                  <div class="volunteer-figure">
+                    <div class="item-table">
+                      <div class="item-tablecell"> <a href="" title=""><i class="fab fa-facebook-f"></i></a> <a href="" title=""><i class="fab fa-twitter"></i></a> <a href="" title=""><i class="fab fa-skype"></i></a> <a href="" title=""><i class="fab fa-linkedin"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="volunteer-text">
+                  <h5>Akansha</h5>
+                  <p>President</p>
+                </div>
+              </div>
+            </div>
+            <div class="volunteer-item">
+              <div class="volunteer-block">
+                <div class="volunteer-image"> <img src="{% static 'website/assets/images/amanpandey.jpg' %}" alt=""/>
+                  <div class="volunteer-figure">
+                    <div class="item-table">
+                      <div class="item-tablecell"> <a href="" title=""><i class="fab fa-facebook-f"></i></a> <a href="" title=""><i class="fab fa-twitter"></i></a> <a href="" title=""><i class="fab fa-skype"></i></a> <a href="" title=""><i class="fab fa-linkedin"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="volunteer-text">
+                  <h5>Aman Pandey</h5>
+                  <p>Sub Head</p>
+                </div>
+              </div>
+            </div>
+            <div class="volunteer-item">
+              <div class="volunteer-block">
+                <div class="volunteer-image"> <img src="{% static 'website/assets/images/ayushverma.jpg' %}" alt=""/>
+                  <div class="volunteer-figure">
+                    <div class="item-table">
+                      <div class="item-tablecell"> <a href="" title=""><i class="fab fa-facebook-f"></i></a> <a href="" title=""><i class="fab fa-twitter"></i></a> <a href="" title=""><i class="fab fa-skype"></i></a> <a href="" title=""><i class="fab fa-linkedin"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="volunteer-text">
+                  <h5>Ayush Verma</h5>
+                  <p>Social Media Head</p>
+                </div>
+              </div>
+            </div>
+            <div class="volunteer-item">
+              <div class="volunteer-block">
+                <div class="volunteer-image"> <img src="{% static 'website/assets/images/yashsrivastava.jpg' %}" alt=""/>
+                  <div class="volunteer-figure">
+                    <div class="item-table">
+                      <div class="item-tablecell"> <a href="" title=""><i class="fab fa-facebook-f"></i></a> <a href="" title=""><i class="fab fa-twitter"></i></a> <a href="" title=""><i class="fab fa-skype"></i></a> <a href="" title=""><i class="fab fa-linkedin"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="volunteer-text">
+                  <h5>Yash Srivastava</h5>
+                  <p>Public Relations Head</p>
+                </div>
+              </div>
+            </div>
+            <div class="volunteer-item">
+              <div class="volunteer-block">
+                <div class="volunteer-image"> <img src="{% static 'website/assets/images/amansahi.jpg' %}" alt=""/>
+                  <div class="volunteer-figure">
+                    <div class="item-table">
+                      <div class="item-tablecell"> <a href="" title=""><i class="fab fa-facebook-f"></i></a> <a href="" title=""><i class="fab fa-twitter"></i></a> <a href="" title=""><i class="fab fa-skype"></i></a> <a href="" title=""><i class="fab fa-linkedin"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="volunteer-text">
+                  <h5>Aman Sahi</h5>
+                  <p>Marketing Head</p>
+                </div>
+              </div>
+            </div>
+            <div class="volunteer-item">
+              <div class="volunteer-block">
+                <div class="volunteer-image"> <img src="{% static 'website/assets/images/shashankpandey.jpg' %}" alt=""/>
+                  <div class="volunteer-figure">
+                    <div class="item-table">
+                      <div class="item-tablecell"> <a href="" title=""><i class="fab fa-facebook-f"></i></a> <a href="" title=""><i class="fab fa-twitter"></i></a> <a href="" title=""><i class="fab fa-skype"></i></a> <a href="" title=""><i class="fab fa-linkedin"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="volunteer-text">
+                  <h5>Shashank Pandey</h5>
+                  <p>Finance Head</p>
+                </div>
+              </div>
+            </div>
+            <div class="volunteer-item">
+              <div class="volunteer-block">
+                <div class="volunteer-image"> <img src="{% static 'website/assets/images/prashantbharti.jpg' %}" alt=""/>
+                  <div class="volunteer-figure">
+                    <div class="item-table">
+                      <div class="item-tablecell"> <a href="" title=""><i class="fab fa-facebook-f"></i></a> <a href="" title=""><i class="fab fa-twitter"></i></a> <a href="" title=""><i class="fab fa-skype"></i></a> <a href="" title=""><i class="fab fa-linkedin"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="volunteer-text">
+                  <h5>Prashant Bharti</h5>
+                  <p>Co-Ordinator</p>
+                </div>
+              </div>
+            </div>
+            <div class="volunteer-item">
+              <div class="volunteer-block">
+                <div class="volunteer-image"> <img src="{% static 'website/assets/images/akashpandey.jpg' %}" alt=""/>
+                  <div class="volunteer-figure">
+                    <div class="item-table">
+                      <div class="item-tablecell"> <a href="" title=""><i class="fab fa-facebook-f"></i></a> <a href="" title=""><i class="fab fa-twitter"></i></a> <a href="" title=""><i class="fab fa-skype"></i></a> <a href="" title=""><i class="fab fa-linkedin"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="volunteer-text">
+                  <h5>Akash Pandey</h5>
+                  <p>Legal Head</p>
+                </div>
+              </div>
+            </div>
+            <div class="volunteer-item">
+              <div class="volunteer-block">
+                <div class="volunteer-image"> <img src="{% static 'website/assets/images/swasti.jpg' %}" alt=""/>
+                  <div class="volunteer-figure">
+                    <div class="item-table">
+                      <div class="item-tablecell"> <a href="" title=""><i class="fab fa-facebook-f"></i></a> <a href="" title=""><i class="fab fa-twitter"></i></a> <a href="" title=""><i class="fab fa-skype"></i></a> <a href="" title=""><i class="fab fa-linkedin"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="volunteer-text">
+                  <h5>Swasti Halder Brota</h5>
+                  <p>Creative Head</p>
+                </div>
+              </div>
+            </div>
+            <div class="volunteer-item">
+              <div class="volunteer-block">
+                <div class="volunteer-image"> <img src="{% static 'website/assets/images/vaishnavigupta.jpg' %}" alt=""/>
+                  <div class="volunteer-figure">
+                    <div class="item-table">
+                      <div class="item-tablecell"> <a href="" title=""><i class="fab fa-facebook-f"></i></a> <a href="" title=""><i class="fab fa-twitter"></i></a> <a href="" title=""><i class="fab fa-skype"></i></a> <a href="" title=""><i class="fab fa-linkedin"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="volunteer-text">
+                  <h5>Vaishnavi Gupta</h5>
+                  <p>Co-Creative Head</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Volunteer end --> 
+  </section>
+  <section id="news"> 
+    <!-- News Start -->
+    <div class="page-content-block news-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-7">
+            <div class="news-block-section">
+              <h2 class="title-bottom-border">Upcoming Events</h2>
+              <div class="owl-carousel news-carousel">
+                <div class="news-item">
+                  <div class="news-date">
+                    <div class="news-date-holder"><strong>20</strong><span>April</span></div>
+                  </div>
+                  <h3>Free food distribution to foodless people</h3>
+                  <div class="news-status">
+                    <ul>
+                      <li><i class="far fa-clock"></i> 8:30 AM - 10:00 AM</li>
+                      <li><i class="fas fa-map-marker-alt"></i> Lucknow, U.P.</li>
+                    </ul>
+                  </div>
+                  <p>Caring Hands is a non-profit organization that works to end hunger for beggars and we are plan to provide regularly good and healthy adequate food. </p>
+                  <p>Feeding to Hunger people are in Lucknow slums and we have started our journey from Lucknow region as this region tops among the list. The Project for Feeding to hunger aims to feed all these areas by providing them one campaign is for a single area as we will be covering all the Lucknow this is phase of Project Feeding to hunger.</p>
+                  <div class="news-contact">
+                    <div class="news-contact-block">
+                      <ul>
+                        <li><i class="fas fa-phone"></i> +1 2375 987</li>
+                        <li><i class="far fa-envelope"></i> help@domainname.com</li>
+                      </ul>
+                    </div>
+                    <div class="news-contact-map"> <a href="" title=""><i class="fas fa-map-marked-alt"></i> View Map</a> </div>
+                  </div>
+                </div>
+                <!--<div class="news-item">
+                  <div class="news-date">
+                    <div class="news-date-holder"><strong>18</strong><span>March</span></div>
+                  </div>
+                  <h3>Some Fund distribution to poor people</h3>
+                  <div class="news-status">
+                    <ul>
+                      <li><i class="far fa-clock"></i> 9:30 AM - 11:00 AM</li>
+                      <li><i class="fas fa-map-marker-alt"></i> Lake park, London</li>
+                    </ul>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                  <div class="news-contact">
+                    <div class="news-contact-block">
+                      <ul>
+                        <li><i class="fas fa-phone"></i> +1 4875 342</li>
+                        <li><i class="far fa-envelope"></i> help@domainname.com</li>
+                      </ul>
+                    </div>
+                    <div class="news-contact-map"> <a href="" title=""><i class="fas fa-map-marked-alt"></i> View Map</a> </div>
+                  </div>
+                </div>-->
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 offset-lg-1">
+            <div class="newsletter">
+              <div class="newsletter-block">
+                <form action="index.html">
+                  <h2>Newsletter</h2>
+                  <p>Sign up for our monthly newsletter to get the latest news, volunteer opportunities.</p>
+                  <input type="text" placeholder="Enter your email" value="" class="news-input">
+                  <button type="submit" value="" class="news-btn">Subscribe <i class="fa fa-location-arrow"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- News end --> 
+  </section>
+  <section id="inspire"> 
+    <!-- Testimonial Start -->
+    <div class="page-content-block testimonial-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-10 offset-lg-1">
+            <div class="section-title wow fadeInUp">
+              <h2>Who Inspire Us</h2>
+              <div class="title-border"><span><i class="fas fa-hand-holding-heart"></i></span></div>
+              <p>Here are few personalities who inspires us the most.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 wow fadeInDown">
+            <div class="owl-carousel testimonial">
+              <div class="testimonial-item">
+                <div class="testimonial-content">
+                  <p>"Civilisation is the distance that man has placed between himself and his own excreta."</p><br><br>
+                  <p><small>We, the members at Caring Hands take utmost care of the environment & our surroundings; and indulge in various cleanliness activities & drives though-out the city.</small></p>
+                </div>
+                <div class="testimonial-title">
+                  <h5><img src="{% static 'website/assets/images/brianaldiss.jpg' %}" alt=""/> Brian Aldiss <span>- Writer</span></h5>
+                </div>
+              </div>
+              <div class="testimonial-item">
+                <div class="testimonial-content">
+                  <p>"The Feeding of those that are hungry is a form of Contemplation & Learning" </p>
+                  <p><small>The act of feeding someone is the ultimate act of care and affection , a form of sharing yourself with someone else through food. So we at Caring Hands exert endlessly to take the dream of ending hunger a step closer to reality. We provide food and rations to the extreme poverty stricken, underprivileged and vulnerable sections of our society.</small></p>
+                </div>
+                <div class="testimonial-title">
+                  <h5><img src="{% static 'website/assets/images/simoneweil.jpg' %}" alt=""/> Daren Simone Weil <span>- French philosopher</span></h5>
+                </div>
+              </div>
+              <div class="testimonial-item">
+                <div class="testimonial-content">
+                  <p>"Education is the most powerful weapon which one can use to change the world"</p><br><br>
+                  <p><small>We at Caring Hands cultivate the future our nation by helping the children and our youth to unlock their potential and to broaden their horizon by making them literate so that they can utilise their skills in achieving their visions.</small></p>
+                </div>
+                <div class="testimonial-title">
+                  <h5><img src="{% static 'website/assets/images/nelsonmandela.jpg' %}" alt=""/> Nelson Mandela <span>- Former President of South Africa</span></h5>
+                </div>
+              </div>
+              <div class="testimonial-item">
+                <div class="testimonial-content">
+                  <p>"The greatness of the nation can be judged by the way it's animals are treated"</p>
+                  <p><small>Cruelty and anger unleashed upon the innocence voiceless animals are the harsh reality of our realm. The starvation and the pleading lymph of these homeless animals provides the vivid picture of the hollowness of our society. So therefore caring members tirelessly flog for the care and protection  of these gull animal. The aim is to create a better environment for these animals to live in where treated with respect and compassion.</small></p>
+                </div>
+                <div class="testimonial-title">
+                  <h5><img src="{% static 'website/assets/images/mahatamagandhi.jpg' %}" alt=""/> Mahatama Gandhi <span></span></h5>
+                </div>
+              </div>
+              <div class="testimonial-item">
+                <div class="testimonial-content">
+                  <p>"We need women at all levels, including the top, to change the dynamic, reshape the conversation, to make sure that the voices of not only the 50% but the 100% population are heard and heeded, not overlooked and ignored"</p>
+                  <p><small>Women are the procreator of the society ; the mother of tomorrow and the one who shapes the destiny of civilization. We at Caring Hands pro-actively toil for the welfare and empowerment of the women in our society so that they can stand independently and face the world with a thriving force.</small></p>
+                </div>
+                <div class="testimonial-title">
+                  <h5><img src="{% static 'website/assets/images/sherylsandberg.jpg' %}" alt=""/> Sheryl Sandberg <span>- Chief Operating Officer of Facebook</span></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End --> 
+  </section>
+  
+  <!-- Gallery Start -->
+  <section id="gallery">
+    <div class="page-content-block our-gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-10 offset-lg-1">
+            <div class="section-title wow fadeInUp">
+              <h2>Recent Gallery</h2>
+              <div class="title-border"><span><i class="fas fa-hand-holding-heart"></i></span></div>
+              <p>Visit our gallery to see our recent works and achievements.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row gallery-row">
+          <div class="col-12 col-sm-6 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'website/assets/images/gallery3.jpg' %}" data-fancybox="images" data-caption="Gallery 3"><img src="{% static 'website/assets/images/gallery3.jpg' %}" alt=""/>
+            <div class="gallery-text">
+              <div class="gallery-text-block">
+                <h4>Gallery 3</h4>
+                <span>Recent Gllery</span> </div>
+            </div>
+            </a> </div>
+          <div class="col-12 col-sm-6 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'website/assets/images/gallery5.jpg' %}" data-fancybox="images" data-caption="Gallery 5"><img src="{% static 'website/assets/images/gallery5.jpg' %}" alt=""/>
+            <div class="gallery-text">
+              <div class="gallery-text-block">
+                <h4>Gallery 5</h4>
+                <span>Recent Gllery</span> </div>
+            </div>
+            </a> </div>
+          <div class="col-12 col-sm-6 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'website/assets/images/gallery1.jpg' %}" data-fancybox="images" data-caption="Gallery 1"><img src="{% static 'website/assets/images/gallery1.jpg' %}" alt=""/>
+            <div class="gallery-text">
+              <div class="gallery-text-block">
+                <h4>Gallery 1</h4>
+                <span>Recent Gllery</span> </div>
+            </div>
+            </a> </div>
+          <div class="col-12 col-sm-6 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'website/assets/images/gallery7.jpg' %}" data-fancybox="images" data-caption="Gallery 7"><img src="{% static 'website/assets/images/gallery7.jpg' %}" alt=""/>
+            <div class="gallery-text">
+              <div class="gallery-text-block">
+                <h4>Gallery 7</h4>
+                <span>Recent Gllery</span> </div>
+            </div>
+            </a> </div>
+          <div class="col-12 col-sm-6 col-lg-4 gallery-block"> <a class="gallery-holder" href="{% static 'website/assets/images/gallery4.jpg' %}" data-fancybox="images" data-caption="Gallery 4"><img src="{% static 'website/assets/images/gallery4.jpg' %}" alt=""/>
+            <div class="gallery-text">
+              <div class="gallery-text-block">
+                <h4>Gallery 4</h4>
+                <span>Recent Gllery</span> </div>
+            </div>
+            </a> </div>
+          <div class="col-12 col-sm-6 col-lg-4 gallery-block"> <a class="gallery-holder" href="{% static 'website/assets/images/gallery2.jpg' %}" data-fancybox="images" data-caption="Gallery 2"><img src="{% static 'website/assets/images/gallery2.jpg' %}" alt=""/>
+            <div class="gallery-text">
+              <div class="gallery-text-block">
+                <h4>Gallery 2</h4>
+                <span>Recent Gllery</span> </div>
+            </div>
+            </a> </div>
+          <div class="col-12 col-sm-6 col-lg-4 gallery-block"> <a class="gallery-holder" href="{% static 'website/assets/images/gallery9.jpg' %}" data-fancybox="images" data-caption="Gallery 9"><img src="{% static 'website/assets/images/gallery9.jpg' %}" alt=""/>
+            <div class="gallery-text">
+              <div class="gallery-text-block">
+                <h4>Gallery 9</h4>
+                <span>Recent Gllery</span> </div>
+            </div>
+            </a> </div>
+          <div class="col-12 col-sm-6 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'website/assets/images/cause-education.jpg' %}" data-fancybox="images" data-caption="Fund for poor education"><img src="{% static 'website/assets/images/cause-education.jpg' %}" alt=""/>
+            <div class="gallery-text">
+              <div class="gallery-text-block">
+                <h4>Fund for poor education</h4>
+                <span>Recent Gllery</span> </div>
+            </div>
+            </a> </div>
+          <div class="col-12 col-sm-6 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'website/assets/images/cause-foodless.jpg' %}" data-fancybox="images" data-caption="Aid for foodless family"><img src="{% static 'website/assets/images/cause-foodless.jpg' %}" alt=""/>
+            <div class="gallery-text">
+              <div class="gallery-text-block">
+                <h4>Aid for foodless family</h4>
+                <span>Recent Gllery</span> </div>
+            </div>
+            </a> </div>
+          <div class="col-12 col-sm-6 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'website/assets/images/cause-homeless.jpg' %}" data-fancybox="images" data-caption="Help for homeless people"><img src="{% static 'website/assets/images/cause-homeless.jpg' %}" alt=""/>
+            <div class="gallery-text">
+              <div class="gallery-text-block">
+                <h4>Help for homeless people</h4>
+                <span>Recent Gllery</span> </div>
+            </div>
+            </a> </div>
+          <div class="col-12 col-sm-6 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'website/assets/images/cause-medical-camp.jpg' %}" data-fancybox="images" data-caption="Fund for helth camp"><img src="{% static 'website/assets/images/cause-medical-camp.jpg' %}" alt=""/>
+            <div class="gallery-text">
+              <div class="gallery-text-block">
+                <h4>Fund for helth camp</h4>
+                <span>Recent Gllery</span> </div>
+            </div>
+            </a> </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center mt-5"> <a href="{% url 'home'  %}" title="" class="main-btn">View Gallery</a> </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Gallery End --> 
+  
+  <!-- Contact Section Start -->
+  <section id="contact"> 
+    <!-- Contact Form Start -->
+    <div class="page-content-block contact-form-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-10 offset-lg-1">
+            <div class="section-title wow fadeInUp">
+              <h2>Contact With Us</h2>
+              <div class="title-border"><span><i class="fas fa-hand-holding-heart"></i></span></div>
+              <p>Getting in touch is easy now.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="contact-form">
+              <form class="steps" accept-charset="UTF-8" enctype="multipart/form-data">
+                <div class="row">
+                  <div class="form-group col-12">
+                    <input type="text" class="form-control" value="" placeholder="Your Full Name" required/>
+                    <span class="error1"> <i class="error-log fa fa-exclamation-triangle"></i> This field is required </span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-12">
+                    <input type="email" class="form-control" value="" placeholder="Email"/>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-12">
+                    <input type="text" class="form-control" value="" placeholder="Phone Number"/>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-12">
+                    <textarea class="form-control" placeholder="Message"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-12 text-right">
+                    <button type="submit" class="main-btn mt-0">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 offset-lg-1">
+            <div class="address">
+              <h2 class="title-bottom-border">Our Address</h2>
+              <div class="address-block">
+                <ul>
+                  <li class="address-icon"><strong>Adderss:</strong><br>
+                    E - 338 Rakcha Khand, Eldico-II, Raebareli Road, Lucknow[U.P.], 226005</li>
+                  <li class="phone-icon"><strong>Telephone No:</strong><br>
+                    +91 9454000170, +91 7007928857</li>
+                  <li class="fax-icon"><strong>Fax No:</strong><br>
+                    +88 01911 837404</li>
+                  <li class="email-icon"><strong>Email:</strong><br>
+                    <a href="mailto:caringhandslko@gmail.com" title="">caringhandslko@gmail.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Form End --> 
+  </section>
+  <!-- Contact Section End --> 
+  
+  <!-- Footer start -->
+  <footer class="site-footer"> 
+    <!-- Footer Top start -->
+    <div class="footer-top-area">
+      <div class="container">
+        <div class="row flex-lg-row-reverse">
+          <div class="col-12 col-lg-9">
+            <div class="counter-block">
+              <div class="counter-holder"> <span class="counter-icon"><img src="{% static 'website/assets/images/supporter-icon.png' %}" alt="Supporter" /></span> <span class="counter" data-count="340">0</span><span>M</span>
+                <h5>Numbers of supporters</h5>
+              </div>
+              <div class="counter-holder"> <span class="counter-icon"><img src="{% static 'website/assets/images/volunteer-icon.png' %}" alt="Supporter" /></span> <span class="counter" data-count="85">0</span><span>K</span>
+                <h5>Volunteers Connected</h5>
+              </div>
+              <div class="counter-holder"> <span class="counter-icon"><img src="{% static 'website/assets/images/complete-project-icon.png' %}" alt="Supporter" /></span> <span class="counter" data-count="67">0</span><span>K</span>
+                <h5>Causes Completed</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="social-block">
+              <h4>Connect with us</h4>
+              <div class="bottom-social"> <a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a> <a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a> <a href="#"><i class="fab fa-youtube"></i><span>Youtube</span></a> <a href="#"><i class="fa fa-rss"></i><span>LinkedIn</span></a> </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- footer top end --> 
+    
+    <!-- copyright start -->
+    <div class="footer-bottom-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 wow fadeInLeft">&copy; 2020 <span>Caring Hands</span>.All Rights Reserved</div>
+          <div class="col-12 col-md-6 text-right wow fadeInRight">Design & Development By: <a href="" title="" target="_blank">web service</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- copyright end --> 
+  </footer>
+  <!-- Footer end --> 
+</div>
+<!-- Main Wrapper end -->
+
+<div class="scrollup"><i class="fa fa-angle-up"></i></div>
+<!-- Footer end --> 
+
+<!-- Tether JS --> 
+<script src="{% static 'website/assets/js/tether.min.js' %}"></script> 
+
+<!-- Popper JS --> 
+<script src="{% static 'website/assets/js/popper.min.js' %}"></script> 
+
+<!-- Bootstrap JS --> 
+<script src="{% static 'website/assets/js/bootstrap.min.js' %}"></script> 
+
+<!-- OwlCarousel JS --> 
+<script src="{% static 'website/assets/js/owl.carousel.min.js' %}"></script> 
+
+<!-- SlickNav JS --> 
+<script src="{% static 'website/assets/js/jquery.slicknav.min.js' %}"></script> 
+
+<!-- fancybox Popup JS --> 
+<script src="{% static 'website/assets/js/jquery.fancybox.min.js' %}"></script> 
+
+<!-- WOW JS --> 
+<script src="{% static 'website/assets/js/wow-1.3.0.min.js' %}"></script> 
+
+<!-- Step Form with validate --> 
+<script src="{% static 'website/assets/js/jquery.validate.js' %}"></script> 
+<script src="{% static 'website/assets/js/form-step.js' %}"></script> 
+
+<!-- Youtube JS --> 
+<script src="{% static 'website/assets/js/youtube-background.js' %}"></script> 
+
+<!-- Coming Soon JS --> 
+<script src="{% static 'website/assets/js/coming-soon.js' %}"></script> 
+
+<!-- Active JS --> 
+<script src="{% static 'website/assets/js/active.js' %}"></script>
+</body>
+</html>
