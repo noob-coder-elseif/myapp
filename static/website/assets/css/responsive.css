@@ -47,7 +47,7 @@ header:before {
 	background-color: #fff;
 }
 .header-block .logo a {
-	background-image: url(../images/logo-green.png);
+	background-image: url(../images/logo-green-white.png);
 }
 .featured-fund {
 	flex-wrap: wrap;
