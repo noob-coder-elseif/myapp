@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '=t+32yx_g81l%z$kt=o&*3uklr+#x9sp@u0x6$k*e-^@zrqi%h'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -129,8 +129,8 @@ STATIC_ROOT = 'staticfiles'
 PAYTM_COMPANY_NAME = "Company Name"   # For representation purposes 
 PAYTM_INDUSTRY_TYPE_ID = "Retail"     # For staging environment
 PAYTM_CHANNEL_ID = "WEB"
-PAYTM_MERCHANT_KEY = "H84WU1M5pQ@zr6v6"
-PAYTM_MERCHANT_ID = "buVrwc14755945661743"
+PAYTM_MERCHANT_KEY = ""
+PAYTM_MERCHANT_ID = ""
 PAYTM_CALLBACK_URL = "http://localhost:8000/response/" # Hardcode
 PAYTM_WEBSITE = "WEBSTAGING"
 PAYTM_PAYMENT_GATEWAY_URL = "https://securegw.paytm.in/order/process"
