@@ -1,0 +1,192 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="Bootstrap4, Multipurpose, responsive, Business, template, Fund, Charity, Poverty, Help, Non profit, Money, Poor, Aid, html5, css, epidemic, pestilence" />
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Title -->
+<title>Caring Hands - Fund For Nonprofit Charity Hope Orphen</title>
+
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/png" href="{% static 'website/assets/images/fevicon1.png' %}">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{% static 'website/assets/css/bootstrap.min.css' %}">
+
+<!-- Font awesome CSS -->
+<link rel="stylesheet" href="{% static 'website/assets/css/font-awesome.min.css' %}">
+
+<!-- Animate CSS -->
+<link rel="stylesheet" href="{% static 'website/assets/css/animate.min.css' %}">
+
+<!-- OwlCarousel CSS -->
+<link rel="stylesheet" href="{% static 'website/assets/css/owl.carousel.min.css' %}">
+
+<!-- Magnific popup CSS -->
+<link rel="stylesheet" href="{% static 'website/assets/css/fancybox.min.css' %}">
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="{% static 'website/style.css' %}">
+
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="{% static 'website/assets/css/responsive.css' %}">
+
+<!-- Red yellow CSS -->
+<link rel="stylesheet" href="{% static 'website/assets/css/color-yellow.css' %}">
+
+<!-- jQuery -->
+<script src="{% static 'website/assets/js/jquery-3.4.1.min.js' %}"></script>
+</head>
+<body>
+<div class="main-wrapper">
+
+<!-- Preloader start -->
+  <div class="site-preloader-wrapper">
+   <div class="preloader-block"> 
+     <div class=""> <a href="{% url 'website:home'  %}" title="Caring Hands"><p class="font-weight-bold text-warning text-justify"></p></a> </div>
+     <div class="bar"></div>
+   </div>  
+  </div>
+<!-- Preloader End -->
+
+  <header class="for-sticky"> 
+    <!-- Header area start -->
+    <div class="container-fluid">
+      <div class="header-block"> 
+        <!-- Site logo Start -->
+        <div class="logo"> <a href="{% url 'website:home'  %}" title="Caring Hands">Caring Hands</a> </div>
+        <!-- Site logo end --> 
+        
+        <!-- Main menu start -->
+        <nav class="mainmenu home-nav">
+          <ul id="navigation">
+            <li class="nav-active"><a href="{% url 'website:home'  %}#home" title="Home">Home</a></li>
+            <li><a href="#about-us" title="About Us">About Us</a></li>
+            <li><a href="#other-causes" title="Causes">Causes</a></li>
+            <li><a href="#volunteer" title="Volunteer">Volunteer</a></li>
+            <li><a href="#news" title="News &amp; Events">News &amp; Events</a></li>
+            <li><a href="#inspire" title="Who Inspire Us">Who Inspire Us</a></li>
+            <li><a href="{% url 'website:gallery'  %}" title="Gallery">Gallery</a></li>
+            <li><a href="{% url 'website:home'  %}" title="Contact">Contact</a></li>
+            <!--<li><a href="#" title="Pages">Pages</a>
+              <ul>
+                <li><a href="" title="Home with color 1">Home with color 1</a></li>
+                <li><a href="" title="Home Slider with color 2">Home Slider with color 2</a></li>
+                <li><a href="" title="Home bg video with color 3">Home bg video with color 3</a></li>
+                <li><a href="" title="Gallery page">Gallery page</a></li>
+                <li><a href="" title="Cause Details with donate">Cause Details with donate</a></li>
+              </ul>
+            </li>-->
+          </ul>
+        </nav>
+        <!-- Main menu end -->
+        <div class="header-login-link">
+          <ul>
+            <!--<li><a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="{% static 'website/assets/images/flag-1.png' %}" alt=""/> EN</a>
+              <ul class="dropdown-menu">
+                <li><a href="" title=""><img src="{% static 'website/assets/images/flag-1.png' %}" alt=""/> EN</a></li>
+              </ul>
+            </li>-->
+          </ul>
+        </div>
+        <div class="header-button"><a href="{% url 'cause_details_donate'  %}" title="">Donate</a></div>
+        <div class="mobile-menu-wrapper home-nav"></div>
+      </div>
+    </div>
+    <!-- Header area End --> 
+  </header>
+  {% block content %}
+  {% endblock %}
+
+
+
+
+    <!-- Footer start -->
+  <footer class="site-footer"> 
+    <!-- Footer Top start -->
+    <div class="footer-top-area">
+      <div class="container">
+        <div class="row flex-lg-row-reverse">
+          <div class="col-12 col-lg-9">
+            <div class="counter-block">
+              <div class="counter-holder"> <span class="counter-icon"><img src="{% static 'website/assets/images/supporter-icon.png' %}" alt="Supporter" /></span> <span class="counter" data-count="340">0</span><span>M</span>
+                <h5>Numbers of supporters</h5>
+              </div>
+              <div class="counter-holder"> <span class="counter-icon"><img src="{% static 'website/assets/images/volunteer-icon.png' %}" alt="Supporter" /></span> <span class="counter" data-count="85">0</span><span>K</span>
+                <h5>Volunteers Connected</h5>
+              </div>
+              <div class="counter-holder"> <span class="counter-icon"><img src="{% static 'website/assets/images/complete-project-icon.png' %}" alt="Supporter" /></span> <span class="counter" data-count="67">0</span><span>K</span>
+                <h5>Causes Completed</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="social-block">
+              <h4>Connect with us</h4>
+              <div class="bottom-social"> <a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a> <a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a> <a href="#"><i class="fab fa-youtube"></i><span>Youtube</span></a> <a href="#"><i class="fa fa-rss"></i><span>LinkedIn</span></a> </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- footer top end --> 
+    
+    <!-- copyright start -->
+    <div class="footer-bottom-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 wow fadeInLeft">&copy; 2020 <span>Caring Hands</span>.All Rights Reserved</div>
+          <div class="col-12 col-md-6 text-right wow fadeInRight">Design & Development By: <a href="" title="" target="_blank">web service</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- copyright end --> 
+  </footer>
+  <!-- Footer end --> 
+</div>
+<!-- Main Wrapper end -->
+
+<div class="scrollup"><i class="fa fa-angle-up"></i></div>
+<!-- Footer end --> 
+
+<!-- Tether JS --> 
+<script src="{% static 'website/assets/js/tether.min.js' %}"></script> 
+
+<!-- Popper JS --> 
+<script src="{% static 'website/assets/js/popper.min.js' %}"></script> 
+
+<!-- Bootstrap JS --> 
+<script src="{% static 'website/assets/js/bootstrap.min.js' %}"></script> 
+
+<!-- OwlCarousel JS --> 
+<script src="{% static 'website/assets/js/owl.carousel.min.js' %}"></script> 
+
+<!-- SlickNav JS --> 
+<script src="{% static 'website/assets/js/jquery.slicknav.min.js' %}"></script> 
+
+<!-- fancybox Popup JS --> 
+<script src="{% static 'website/assets/js/jquery.fancybox.min.js' %}"></script> 
+
+<!-- WOW JS --> 
+<script src="{% static 'website/assets/js/wow-1.3.0.min.js' %}"></script> 
+
+<!-- Step Form with validate --> 
+<script src="{% static 'website/assets/js/jquery.validate.js' %}"></script> 
+<script src="{% static 'website/assets/js/form-step.js' %}"></script> 
+
+<!-- Youtube JS --> 
+<script src="{% static 'website/assets/js/youtube-background.js' %}"></script> 
+
+<!-- Coming Soon JS --> 
+<script src="{% static 'website/assets/js/coming-soon.js' %}"></script> 
+
+<!-- Active JS --> 
+<script src="{% static 'website/assets/js/active.js' %}"></script>
+</body>
+</html>

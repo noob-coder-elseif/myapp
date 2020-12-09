@@ -1,0 +1,232 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+  
+  <!-- Breadcroumbs start -->
+  <div class="page-content-block page-breadcroumb inner-banner-bg-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Fund for poor education and homeless people</h1>
+          <a href="index.html" title="Home">Home</a> / Fund for poor education </div>
+      </div>
+    </div>
+  </div>
+  <!-- Breadcroumbs end --> 
+  
+  <!-- Cause Details start -->
+  <div class="page-content-block">
+    <div class="container">
+      <div class="row flex-lg-row-reverse"> 
+        <!-- Donate start -->
+        <div class="col-12 col-lg-5">
+          <div class="causes-right">
+            <div class="featured-fund-raise">
+              <div class="featured-fund-raise-block">
+                <div class="progress show-raised-percent">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span>80%</span></div>
+                </div>
+                <div class="raise-total"><span><b><i class="fas fa-rupee-sign"></i>4000</b> raised</span> <span>of <b><i class="fas fa-rupee-sign"></i>5000</b></span></div>
+              </div>
+            </div>
+            <div class="donor-ount"><span><b>14</b> Donors</span> <a href="#" title="" class="share-btn">Share</a></div>
+            <div class="donation-form">
+              <form class="steps" accept-charset="UTF-8" enctype="multipart/form-data" action="payment/" method="GET">
+                {% csrf_token %}
+                <fieldset>
+                  <h3 class="title-bottom-border">Select Donation Amount</h3>
+                  <div class="donation-block">
+                    <div class="quick-donation">
+                      <div class="quick-donation-block">
+                        <input type="radio" name="donateAmount" id="donateamount1" class="css-checkbox" />
+                        <label for="donateamount1" class="css-label"><i class="fas fa-rupee-sign"></i>5</label>
+                      </div>
+                      <div class="quick-donation-block">
+                        <input type="radio" name="donateAmount" id="donateamount2" class="css-checkbox" />
+                        <label for="donateamount2" class="css-label"><i class="fas fa-rupee-sign"></i>10</label>
+                      </div>
+                      <div class="quick-donation-block">
+                        <input type="radio" name="donateAmount" id="donateamount3" class="css-checkbox" />
+                        <label for="donateamount3" class="css-label"><i class="fas fa-rupee-sign"></i>15</label>
+                      </div>
+                      <div class="quick-donation-block">
+                        <input type="radio" name="donateAmount" id="donateamount4" class="css-checkbox" />
+                        <label for="donateamount4" class="css-label"><i class="fas fa-rupee-sign"></i>20</label>
+                      </div>
+                      <div class="quick-donation-block">
+                        <input type="radio" name="donateAmount" id="donateamount5" class="css-checkbox" />
+                        <label for="donateamount5" class="css-label"><i class="fas fa-rupee-sign"></i>25</label>
+                      </div>
+                      <div class="quick-donation-block">
+                        <input type="radio" name="donateAmount" id="donateamount6" class="css-checkbox" />
+                        <label for="donateamount6" class="css-label"><i class="fas fa-rupee-sign"></i>30</label>
+                      </div>
+                    </div>
+                    <div class="donation-amount">
+                      <div><i class="fas fa-rupee-sign"></i></div>
+                      <input type="text" class="donation-amount-input" value="" name="money" required>
+                      <span class="error1"> <i class="error-log fa fa-exclamation-triangle"></i> Please enter amount </span>
+                      <div>.00</div>
+                    </div>
+                  </div>
+                  <input type="button" name="next" class="next main-btn" value="Continue" />
+                </fieldset>
+                <fieldset>
+                  <h3 class="title-bottom-border">Fill the information</h3>
+                  <!--<div class="total-payment"> Selected Amount: <strong><i class="fas fa-rupee-sign"></i></strong> </div>-->
+                  <div class="reg-form">
+                    <div class="form-row">
+                      <div class="form-group col-12">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" value="" placeholder="First Name" required>
+                        <span class="error1"> <i class="error-log fa fa-exclamation-triangle"></i> This field is required </span> </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-12">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control" value="" placeholder="Last Name">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-12">
+                        <label>Email</label>
+                        <input type="email" class="form-control" value="" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-12">
+                        <label>Phone</label>
+                        <input type="text" class="form-control" value="" placeholder="Phone">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-12">
+                        <label>Country</label>
+                        <select class="custom-select">
+                          <option value="India" selected>India</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <input type="button" name="previous" class="previous main-btn" value="Previous" />
+                  <input type="submit" name="next" class="next main-btn" value="Continue" />
+                </fieldset>
+                
+                <!--<fieldset>
+                  <div class="thank-you">
+                    <h3>Thank You</h3>
+                    <p>Your payment has been proceed successfully</p>
+                  </div>
+                </fieldset>-->
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Donate end -->
+        <div class="col-12 col-lg-7"> 
+          <!-- Cause content start -->
+          <div class="causes-left">
+            <h2>Fund for poor education</h2>
+            <h6>Posted on 8 March 2015</h6>
+            <p>Caring hands offers a platform to crowdfund for education, not only to poor students and teachers in need of funds, but to anyone who wants to fundraise for education in the state and the country.</p>
+            <div class="row gallery-row">
+              <div class="col-12 col-sm-6 col-lg-12 gallery-block"> <a class="gallery-holder" href="{% static 'website/assets/images/gallery1.jpg' %}" data-fancybox="images" data-caption="Gallery 1"><img src="{% static 'website/assets/images/gallery1.jpg' %}" alt=""/>
+                <div class="gallery-text">
+                  <div class="gallery-text-block">
+                    <h4>Gallery 1</h4>
+                    <span>Recent Gllery</span> </div>
+                </div>
+                </a> </div>
+              <div class="col-12 col-sm-6 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'website/assets/images/gallery2.jpg' %}" data-fancybox="images" data-caption="Gallery 2"><img src="{% static 'website/assets/images/gallery2.jpg' %}" alt=""/>
+                <div class="gallery-text">
+                  <div class="gallery-text-block">
+                    <h4>Gallery 2</h4>
+                    <span>Recent Gllery</span> </div>
+                </div>
+                </a> </div>
+              <div class="col-12 col-sm-4 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'website/assets/images/gallery-3.jpg' %}" data-fancybox="images" data-caption="Gallery 3"><img src="{% static 'website/assets/images/gallery-3.jpg' %}" alt=""/>
+                <div class="gallery-text">
+                  <div class="gallery-text-block">
+                    <h4>Gallery 3</h4>
+                    <span>Recent Gllery</span> </div>
+                </div>
+                </a> </div>
+              <div class="col-12 col-sm-4 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'website/assets/images/gallery4.jpg' %}" data-fancybox="images" data-caption="Gallery 4"><img src="{% static 'website/assets/images/gallery4.jpg' %}" alt=""/>
+                <div class="gallery-text">
+                  <div class="gallery-text-block">
+                    <h4>Gallery 4</h4>
+                    <span>Recent Gllery</span> </div>
+                </div>
+                </a> </div>
+              <div class="col-12 col-sm-4 col-lg-3 gallery-block"> <a class="gallery-holder" href="{% static 'website/assets/images/gallery5.jpg' %}" data-fancybox="images" data-caption="Gallery 5"><img src="{% static 'website/assets/images/gallery5.jpg' %}" alt=""/>
+                <div class="gallery-text">
+                  <div class="gallery-text-block">
+                    <h4>Gallery 5</h4>
+                    <span>Recent Gllery</span> </div>
+                </div>
+                </a> </div>
+            </div>
+            <p>The Education Fund helps disadvantaged young people around the world to access education. To assist these young people on their path to education, personal growth, and social involvement, we provide support to hand-picked promising educational projects in areas where funding is either difficult to obtain or non-existent.
+            The Education Fund has donated to educational projects across the globe, from Kashmir to KanyaKumari and beyond. To find out more about specific projects and what you can do to get involved.
+            We are open to homeless charities, poverty prevention schemes and housing associations. Your donation is used for prevention of homelessness, care of the homeless .</p>
+          </div>
+          <!-- Cause content end --> 
+          
+          <!-- Comment start 
+          <div class="comment-sec">
+            <h4 class="title-with-bg text-uppercase">3 Thoughts on “This Caues”</h4>
+            <div class="comment-group">
+              <div class="comment-img"><img src="{% static 'website/assets/images/team-member-1.jpg' %}" alt=""/></div>
+              <div class="comment-content">
+                <h6>Kate Winless <span><i class="fa fa-clock-o"></i> 14th Feb 2015 at 9.00 am</span></h6>
+                <p>Phasellus odio dolor, pretium sit amet aliquam a, gravida eget dui. Pellentesque ipsum sque vitae ut ligula. Ut luctus fermentum commodo. Mauris eget justo turpis, eget fringilla. Duis lobortis cursus mi vel tristique.</p>
+                <a href="" title="">Reply</a> </div>
+              <div class="reply-comment">
+                <div class="comment-img"><img src="{% static 'website/assets/images/team-member-2.jpg' %}" alt=""/></div>
+                <h6>Kate Winless <span><i class="fa fa-clock-o"></i> 14th Feb 2015 at 9.00 am</span></h6>
+                <p>Phasellus odio dolor, pretium sit amet aliquam a, gravida eget dui. Pellentesque ipsum sque vitae ut ligula. Ut luctus fermentum commodo. Mauris eget justo turpis, eget fringilla. Duis lobortis cursus mi vel tristique.</p>
+                <a href="" title="">Reply</a> </div>
+            </div>
+            <div class="comment-group">
+              <div class="comment-img"><img src="{% static 'website/assets/images/team-member-4.jpg' %}" alt=""/></div>
+              <div class="comment-content">
+                <h6>Kate Winless <span><i class="fa fa-clock-o"></i> 14th Feb 2015 at 9.00 am</span></h6>
+                <p>Phasellus odio dolor, pretium sit amet aliquam a, gravida eget dui. Pellentesque ipsum sque vitae ut ligula. Ut luctus fermentum commodo. Mauris eget justo turpis, eget fringilla. Duis lobortis cursus mi vel tristique.</p>
+                <a href="" title="">Reply</a> </div>
+            </div>
+          </div>
+           Comment end --> 
+          
+          <!-- Comment form start -->
+          <div class="comment-form mb-md-30">
+            <h3>Leave a Comment</h3>
+            <p>Your email address will not be published. Required fields are marked</p>
+            <form action="{% url 'cause_details_donate'  %}">
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <input type="text" class="form-control" placeholder="Name">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <input type="email" class="form-control" placeholder="Email">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Message"></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="main-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+          <!-- Comment form end --> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Cause Details end --> 
+  
+  <!-- Footer start -->
+{% endblock %}

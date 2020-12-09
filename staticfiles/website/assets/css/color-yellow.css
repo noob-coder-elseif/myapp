@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .logo a {
-	background-image:url(../images/logo-yellow-white.png);
+	background-image:url(../images/logo-green-white.png);
 }
 .site-preloader-wrapper:before, .site-preloader-wrapper:after {
 	background: #b40046;
@@ -36,7 +36,7 @@
 }
 .ico-video:before{background-color:#ffb732;}
 @media only screen and (max-width: 991px) {
-.header-block .logo a{background-image:url(../images/logo-yellow.png);}
+.header-block .logo a{background-image:url(../images/logo-green-white.png);}
 .social-block{border-top-color:#fdd489;}
 }
 

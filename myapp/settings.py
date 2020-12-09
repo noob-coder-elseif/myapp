@@ -25,7 +25,7 @@ SECRET_KEY = '=t+32yx_g81l%z$kt=o&*3uklr+#x9sp@u0x6$k*e-^@zrqi%h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','localhost']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website',
+    'payments',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +125,13 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = 'staticfiles'
+
+PAYTM_COMPANY_NAME = "Company Name"   # For representation purposes 
+PAYTM_INDUSTRY_TYPE_ID = "Retail"     # For staging environment
+PAYTM_CHANNEL_ID = "WEB"
+PAYTM_MERCHANT_KEY = "H84WU1M5pQ@zr6v6"
+PAYTM_MERCHANT_ID = "buVrwc14755945661743"
+PAYTM_CALLBACK_URL = "http://localhost:8000/response/" # Hardcode
+PAYTM_WEBSITE = "WEBSTAGING"
+PAYTM_PAYMENT_GATEWAY_URL = "https://securegw.paytm.in/order/process"
+PAYTM_TRANSACTION_STATUS_URL = "https://securegw.paytm.in/order/status"
